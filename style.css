@@ -76,34 +76,31 @@ header p {
     margin-bottom: 0;
 }
 
-.section {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 main {
-  background-color: #f7f7f7;
-  width: 100%;
-  padding: 2.5em 2.5em 0;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 2.5em 2.5em 0;
 }
 main h2 {
-text-align: center;
-padding-bottom: 1em;
-font-family: "EB Garamond", serif;
-font-weight: bold;
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: "EB Garamond", serif;
+    font-weight: bold;
 }
 main article {
-margin: auto auto 1em;
-background-color: white;
-border-radius: 5px;
-padding-bottom: 0.5em;
-font-family: "Abel", sans-serif;
+    margin: auto auto 1em;
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 0.5em;
+    font-family: "Abel", sans-serif;
 }
+
 main article img {
-width: 100%;
-height: 15em;
-margin: auto;
-border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 15em;
+    margin: auto;
+    border-radius: 5px 5px 0 0;
 }
 
 .sale {
@@ -117,13 +114,54 @@ border-radius: 5px 5px 0 0;
 }
 main article h3,
 main article p {
-padding-left: 1rem;
+    padding-left: 1rem;
 }
 main article p:nth-child(3) {
-color: #c9c4bf;
-margin: 0;
+    color: #c9c4bf;
+    margin: 0;
 }
-
+main #slider .item img {
+    width: 90%;
+}
+main #slider #carousel-text {
+    text-align: right;
+}
+main #slider #carousel-text a {
+    text-decoration: none;
+    color: #a28f61;
+    font-size: 30px;
+}
+main #slider #carousel-text h3 {
+    padding-bottom: 1em;
+    font-family: "EB Garamond", serif;
+    font-weight: bold;
+}
+main #slider #carousel-text button {
+    color: white;
+    background-color: #a28f61;
+    border: 1px solid #a28f61;
+    border-radius: 3px;
+    padding: 0.5em 2em;
+    font-size: 15px;
+    padding: 0.5em 4em;
+}
+main #slider #carousel-text h3:nth-child(5),
+main #slider #carousel-text p {
+    text-align: left;
+}
+main .hide-bullets {
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+main #lePanier #titlePanier {
+    background-color: #281400;
+    color: white;
+}
+main #lePanier td {
+    color: #281400;
+    font-size: 15px;
+}
 footer {
     background-color: #0f3e57;
     padding: 2.5em;

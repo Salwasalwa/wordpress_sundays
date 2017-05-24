@@ -28,10 +28,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Catalog<span class="sr-only">(current)</span></a></li>
+                            <li class="active"><a href="<?php echo get_page_link(42) ?>">Catalog<span class="sr-only">(current)</span></a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Stores</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="<?php echo get_page_link(44) ?>">Blog</a></li>
                             <li><a href="./contact.html">Contact Us</a></li>
                             <form class="navbar-form navbar-right">
                                 <div class="form-group">
