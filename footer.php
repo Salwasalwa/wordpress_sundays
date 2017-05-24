@@ -14,9 +14,18 @@
                 </div>
                 <div class=" col-xs-12 col-sm-6 col-md-3">
                     <h4>Newsletter</h4>
-                    <p>
-                        <input type="text" class="form-control" placeholder="Your email ..."><button type="button" name="button">Ok</button>
-                    </p>
+                    <?php
+
+                        $wpdb->insert(
+                            'Emails',
+                                array(
+                            'Email' => $_GET['Email'])
+                        );
+                        echo '<form>';
+                        echo '<input type="mail" name="Email" value="" placeholder="Your Email">';
+                        echo '<input type="submit" name="submit" value="Ok">';
+                        echo '</form>';
+                    ?>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <h4>Follow Us</h4>
