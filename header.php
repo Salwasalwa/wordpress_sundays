@@ -26,21 +26,17 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="<?php echo get_page_link(42) ?>">Catalog<span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Stores</a></li>
-                            <li><a href="<?php echo get_page_link(44) ?>">Blog</a></li>
-                            <li><a href="./contact.html">Contact Us</a></li>
-                            <form class="navbar-form navbar-right">
-                                <div class="form-group">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </div>
-                            </form>
-                        </ul>
+                    <?php
+                    $args = array (
+                      'container' => 'div',
+                      'container_class' => 'collapse navbar-collapse',
+                      'container_id' => 'bs-example-navbar-collapse-1',
+                      'menu_class' => 'nav navbar-nav',
+                    );
 
-                    </div>
+                    wp_nav_menu($args)
+                    ?>
+
                 </div>
             </nav>
             <article class="">
